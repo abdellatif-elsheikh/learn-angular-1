@@ -1,0 +1,13 @@
+.top-header {
+  font-family: "Kode Mono", monospace;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 10px 0 5px 0;
+  background-color: #212121;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+}

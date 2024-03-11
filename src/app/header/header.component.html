@@ -1,11 +1,18 @@
-<section class="home">
-  <h2 class="title">First angular project</h2>
-  <p class="description">
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda beatae placeat sunt a itaque laborum quibusdam, similique, qui aperiam sequi velit aliquam deleniti aspernatur unde. Libero tenetur maxime animi ipsa.
-  </p>
-  <form action="">
-    <input type="text" placeholder="Enter Email" class="email">
-    <input type="password" placeholder="Enter password" class="password">
-    <input type="button" value="submit" class="btn">
-  </form>
-</section>
+<header class="header">
+  <app-top-menu></app-top-menu>
+  <div class="menu">
+    <div class="logo">
+      <h2>eKart</h2>
+    </div>
+    <ul class="menu__links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Products</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <div class="header-search">
+      <input type="text" name="search" id="" placeholder="Search">
+      <i class="fa-solid fa-magnifying-glass"></i>
+    </div>
+  </div>
+</header>
