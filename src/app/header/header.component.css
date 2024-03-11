@@ -11,51 +11,7 @@
   align-items: center;
   gap: 20px;
   flex-wrap: wrap;
-  padding: 0px 65px 0px 35px;
+  padding: 5px 65px 5px 35px;
   margin: 0;
   box-shadow: 0 4px 7px 0 rgba(0,0,0,.1)
-}
-
-.logo h2 {
-  font-size: 40px;
-  font-weight: 600;
-  font-family: "Madimi One", sans-serif;;
-  color: #212121;
-  letter-spacing: 1px
-}
-
-.menu__links {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 25px;
-  margin: 0
-}
-
-.menu__links a {
-  font-size: 16px;
-  text-transform: uppercase;
-  color: #000
-}
-
-.header-search {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-}
-
-.header-search input{
-  padding: 10px 30px 10px 20px;
-  outline: none;
-  border: 1px solid rgba(0,0,0,.3);
-  border-radius: 7px;
-  color: #323232;
-  font-size: 14px;
-}
-
-.header-search i {
-  position: absolute;
-  right: 7px;
-  color: rgba(0,0,0,.5)
 }

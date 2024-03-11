@@ -6,6 +6,9 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { TopHeaderComponent } from './top-header/top-header.component';
 import { TopMenuComponent } from './header/top-menue/top-menu.component';
+import { MenuComponent } from './header/menu/menu.component';
+import { LogoComponent } from './header/logo/logo.component';
+import { SearchComponent } from './header/search/search.component';
 
 @NgModule({
   declarations: [
@@ -13,6 +16,9 @@ import { TopMenuComponent } from './header/top-menue/top-menu.component';
     HeaderComponent,
     TopHeaderComponent,
     TopMenuComponent,
+    MenuComponent,
+    LogoComponent,
+    SearchComponent,
   ],
   imports: [
     BrowserModule,

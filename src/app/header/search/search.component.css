@@ -1,0 +1,21 @@
+.header-search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.header-search input{
+  padding: 10px 30px 10px 20px;
+  outline: none;
+  border: 1px solid rgba(0,0,0,.3);
+  border-radius: 7px;
+  color: #323232;
+  font-size: 14px;
+}
+
+.header-search i {
+  position: absolute;
+  right: 7px;
+  color: rgba(0,0,0,.5)
+}
