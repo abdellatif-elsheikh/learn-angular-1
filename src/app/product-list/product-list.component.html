@@ -1,13 +1,1 @@
-<div class="product-list-wrapper">
-  <img [src]="phoneInfo.image" alt="iphone13" />
-  <p>Name: {{phoneInfo.name}}</p>
-  <p>Price: {{phoneInfo.price}}$</p>
-  <p>Color: {{ phoneInfo.color}}</p>
-  <p>Discount Price: {{calcDiscount().toFixed(0)}}$</p>
-  <p>{{ phoneInfo.inStock > 0 ? ('Available amount: ' + phoneInfo.inStock ) : 'This product is no longer existed'}}</p>
-  <button class="btn btn-success px-3" (click)="incrementPurchases()">+</button>
-  <span class="p-3">{{addToCart}}</span>
-  <button class="btn btn-danger px-3" (click)="decrementPurchases()">-</button>
-  <!-- <input type="text" placeholder="Type your name" (input)="changeName($event)"/>
-<p>name: {{name}}</p> -->
-</div>
+<search-product></search-product>

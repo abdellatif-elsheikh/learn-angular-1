@@ -10,6 +10,8 @@ import { MenuComponent } from './header/menu/menu.component';
 import { LogoComponent } from './header/logo/logo.component';
 import { SearchComponent } from './header/search/search.component';
 import { ProductListComponent } from './product-list/product-list.component';
+import { SearchProductComponent } from './product-list/search-product/search-product.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -21,10 +23,12 @@ import { ProductListComponent } from './product-list/product-list.component';
     LogoComponent,
     SearchComponent,
     ProductListComponent,
+    SearchProductComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [
     provideClientHydration()
