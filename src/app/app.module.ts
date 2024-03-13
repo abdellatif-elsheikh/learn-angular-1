@@ -9,6 +9,7 @@ import { TopMenuComponent } from './header/top-menue/top-menu.component';
 import { MenuComponent } from './header/menu/menu.component';
 import { LogoComponent } from './header/logo/logo.component';
 import { SearchComponent } from './header/search/search.component';
+import { ProductListComponent } from './product-list/product-list.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { SearchComponent } from './header/search/search.component';
     MenuComponent,
     LogoComponent,
     SearchComponent,
+    ProductListComponent,
   ],
   imports: [
     BrowserModule,
