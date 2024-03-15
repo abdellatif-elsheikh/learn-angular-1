@@ -14,6 +14,7 @@ export class ProductListComponent {
       description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur fuga a, ipsa veniam assumenda voluptates non ipsam!',
       category: 'ios',
       price: 350,
+      isAvailable: true,
       discount: .5
     },
     {
@@ -23,6 +24,7 @@ export class ProductListComponent {
       description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur fuga a, ipsa veniam assumenda voluptates non ipsam!',
       category: 'ios',
       price: 370,
+      isAvailable: false,
       discount: .7
     },
     {
@@ -32,6 +34,7 @@ export class ProductListComponent {
       description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur fuga a, ipsa veniam assumenda voluptates non ipsam!',
       category: 'ios',
       price: 560,
+      isAvailable: false,
     },
     {
       id: 4,
@@ -39,7 +42,8 @@ export class ProductListComponent {
       image: 'assets/images/iphone4.jpeg',
       description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur fuga a, ipsa veniam assumenda voluptates non ipsam!',
       category: 'ios',
-      price: 570
+      price: 570,
+      isAvailable: true,
     },
     {
       id: 5,
@@ -48,6 +52,7 @@ export class ProductListComponent {
       description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur fuga a, ipsa veniam assumenda voluptates non ipsam!',
       category: 'ios',
       price:800,
+      isAvailable: true,
       discount: .6
     },
     {
@@ -56,7 +61,8 @@ export class ProductListComponent {
       image: 'assets/images/iphone6.jpg',
       description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur fuga a, ipsa veniam assumenda voluptates non ipsam!',
       category: 'ios',
-      price:950
+      price:950,
+      isAvailable: false,
     },
     {
       id: 7,
@@ -64,7 +70,8 @@ export class ProductListComponent {
       image: 'assets/images/samsung-a50.jpg',
       description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur fuga a, ipsa veniam assumenda voluptates non ipsam!',
       category: 'android',
-      price:450
+      price:450,
+      isAvailable: true,
     },
     {
       id: 8,
@@ -73,6 +80,7 @@ export class ProductListComponent {
       description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur fuga a, ipsa veniam assumenda voluptates non ipsam!',
       category: 'android',
       price:370,
+      isAvailable: true,
       discount: .5
     },
     {
@@ -81,7 +89,8 @@ export class ProductListComponent {
       image: 'assets/images/xaomi.jpg',
       description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur fuga a, ipsa veniam assumenda voluptates non ipsam!',
       category: 'android',
-      price:820
+      price:820,
+      isAvailable: true,
     },
     {
       id: 10,
@@ -90,6 +99,7 @@ export class ProductListComponent {
       description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur fuga a, ipsa veniam assumenda voluptates non ipsam!',
       category: 'windows',
       price:790,
+      isAvailable: false,
       discount: .4
     },
     {
@@ -98,7 +108,8 @@ export class ProductListComponent {
       image: 'assets/images/huawei.jpeg',
       description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur fuga a, ipsa veniam assumenda voluptates non ipsam!',
       category: 'android',
-      price:910
+      price:910,
+      isAvailable: true,
     },
   ]
 }

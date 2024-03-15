@@ -20,6 +20,12 @@
           Price: {{item.price}}$
         </p>
         <a href="#" class="">{{item.category}}</a>
+
+        <p [ngClass]=" 
+        {'text-success': item.isAvailable, 'text-danger': !item.isAvailable} 
+        ">
+          {{item.isAvailable ? 'Available in stock' : 'Not available in stock'}}
+        </p>
       </div>
     </div>
   </div>
