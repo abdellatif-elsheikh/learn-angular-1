@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'product-list',
-  templateUrl: './product-list.component.html',
-  styleUrl: './product-list.component.css',
+  selector: 'container',
+  templateUrl: './container.component.html',
+  styleUrl: './container.component.css',
 })
-export class ProductListComponent {
+export class ContainerComponent {
   // name = 'Ahmed';
   phoneInfo = {
     image: '/assets/images/download.jpeg',

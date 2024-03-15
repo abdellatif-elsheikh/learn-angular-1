@@ -3,6 +3,8 @@
   <button class="btn btn-search">Search</button>
 </div>
 <div class="ekart-search-result-for">
-  <p><strong>Search result for:</strong> {{searchResult}}</p>
+  <p *ngIf="searchResult"><strong>Search result for:</strong> {{searchResult}}</p>
 </div>
-
+<!-- <div class="container" *ngFor="let num of demoArr">
+  <p>Current number is: {{num}}</p>
+</div> -->

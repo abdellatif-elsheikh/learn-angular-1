@@ -6,5 +6,22 @@ import { Component } from '@angular/core';
   styleUrl: './menu.component.css'
 })
 export class MenuComponent {
-
+  listLinks = [
+    {
+      name: 'Home',
+      link: '#'
+    },
+    {
+      name: 'Products',
+      link: '#'
+    },
+    {
+      name: 'About',
+      link: '#'
+    },
+    {
+      name: 'Contact',
+      link: '#'
+    },
+  ]
 }

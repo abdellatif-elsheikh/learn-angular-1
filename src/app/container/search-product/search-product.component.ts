@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrl: './search-product.component.css'
 })
 export class SearchProductComponent {
-  searchResult = 'mens wear'
+  searchResult = ''
 }
