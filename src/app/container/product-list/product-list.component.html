@@ -1,32 +1,5 @@
 <div class="container">
   <div class="row justify-content-center">
-
-    <div class="card p-1 m-2" style="width: 18rem;" *ngFor="let item of products">
-      <img class="card-img-top" [src]="item.image" alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title">{{item.name}}</h5>
-        <p class="card-text"> {{item.description}} </p>
-        <!-- Discount percentage -->
-        <span class="text-primary text-uppercase" *ngIf="item.discount">
-          {{ 100 - (item.discount * 100 ) }}% OFF!
-        </span>
-        <!-- If there is a discount this tag will display -->
-        <p *ngIf="item.discount">
-          Price: {{item.price * item.discount}}$ 
-          <sup><s> {{item.price}}$ </s></sup>
-        </p>
-        <!-- If there is no discount this tag will display -->
-        <p *ngIf="item.discount == undefined ">
-          Price: {{item.price}}$
-        </p>
-        <a href="#" class="">{{item.category}}</a>
-
-        <p [ngClass]=" 
-        {'text-success': item.isAvailable, 'text-danger': !item.isAvailable} 
-        ">
-          {{item.isAvailable ? 'Available in stock' : 'Not available in stock'}}
-        </p>
-      </div>
-    </div>
+    <app-product class="m-3 p-0 w-auto" *ngFor="let prod of products" [product]="prod"></app-product>
   </div>
 </div>

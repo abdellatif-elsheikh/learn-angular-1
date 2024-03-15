@@ -1,0 +1,27 @@
+<div class="card p-1" style="width: 18rem;">
+  <img class="card-img-top" [src]="product.image" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">{{product.name}}</h5>
+    <p class="card-text"> {{product.description}} </p>
+    <!-- Discount percentage -->
+    <span class="text-primary text-uppercase" *ngIf="product.discount">
+      {{ 100 - (product.discount * 100 ) }}% OFF!
+    </span>
+    <!-- If there is a discount this tag will display -->
+    <p *ngIf="product.discount">
+      Price: {{product.price * product.discount}}$ 
+      <sup><s> {{product.price}}$ </s></sup>
+    </p>
+    <!-- If there is no discount this tag will display -->
+    <p *ngIf="product.discount == undefined ">
+      Price: {{product.price}}$
+    </p>
+    <a href="#" class="">{{product.category}}</a>
+
+    <p [ngClass]=" 
+    {'text-success': product.isAvailable, 'text-danger': !product.isAvailable} 
+    ">
+      {{product.isAvailable ? 'Available in stock' : 'Not available in stock'}}
+    </p>
+  </div>
+</div>
