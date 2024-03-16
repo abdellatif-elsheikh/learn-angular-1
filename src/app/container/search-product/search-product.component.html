@@ -2,9 +2,12 @@
   <input 
   type="text"
   class="ekart-search-product__input" 
-  [(ngModel)]="searchResult"
-  (keyup)="onSearch()">
-  <button class="btn btn-search">Search</button>
+  #searchInput>
+  <button
+  class="btn btn-search"
+  (click)="onSubmitSearch(searchInput)">
+  Search
+  </button>
 </div>
 <div class="ekart-search-result-for">
   <p *ngIf="searchResult"><strong>Search result for:</strong> {{searchResult}}</p>

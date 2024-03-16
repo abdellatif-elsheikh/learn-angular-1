@@ -10,7 +10,11 @@ export class SearchProductComponent {
 
   @Output()
   searchValue: EventEmitter<string> = new EventEmitter<string>()
-  onSearch = () => {
+
+  onSubmitSearch = (searchValue: HTMLInputElement) => {
+
+    this.searchResult = searchValue.value
     this.searchValue.emit(this.searchResult)
+    
   }
 }

@@ -6,8 +6,8 @@
       <div 
       *ngIf="(
       (receivedSearchValue === '') 
-      || (prod.name.includes(receivedSearchValue))
-      || (prod.category.includes(receivedSearchValue))
+      || (prod.name.toLowerCase().includes(receivedSearchValue.toLowerCase()))
+      || (prod.category.toLowerCase().includes(receivedSearchValue.toLowerCase()))
       )
       ">
         <app-product 
