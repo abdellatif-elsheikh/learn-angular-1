@@ -4,7 +4,12 @@
   <div class="row justify-content-center">
     <div class="m-3 p-0 w-auto" *ngFor="let prod of products">
       <div 
-      *ngIf="(receivedSearchValue === '' || prod.name.includes(receivedSearchValue))">
+      *ngIf="(
+      (receivedSearchValue === '') 
+      || (prod.name.includes(receivedSearchValue))
+      || (prod.category.includes(receivedSearchValue))
+      )
+      ">
         <app-product 
         [product]="prod"
         *ngIf="(selectedFilter === 'all' || prod.isAvailable.toString() === selectedFilter)">
