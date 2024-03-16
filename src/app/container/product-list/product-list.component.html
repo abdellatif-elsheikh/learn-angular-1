@@ -1,15 +1,15 @@
-<app-filter 
-[all]="totalProducts" 
-[inStock]="totalProductsInStock" 
-[outStock]="totalProductsOutStock"
-(selectedFilterChanged)="filterChanged($event)"
-></app-filter>
+<app-filter [all]="totalProducts" [inStock]="totalProductsInStock" [outStock]="totalProductsOutStock"
+  (selectedFilterChanged)="filterChanged($event)"></app-filter>
 <div class="container">
   <div class="row justify-content-center">
     <div class="m-3 p-0 w-auto" *ngFor="let prod of products">
-      <app-product 
-      [product]="prod"
-      *ngIf="(selectedFilter === 'all' || prod.isAvailable.toString() === selectedFilter)"></app-product>
+      <div 
+      *ngIf="(receivedSearchValue === '' || prod.name.includes(receivedSearchValue))">
+        <app-product 
+        [product]="prod"
+        *ngIf="(selectedFilter === 'all' || prod.isAvailable.toString() === selectedFilter)">
+        </app-product>
+      </div>
     </div>
   </div>
 </div>

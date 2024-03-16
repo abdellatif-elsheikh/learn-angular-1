@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'product-list',
@@ -138,4 +138,7 @@ export class ProductListComponent {
   filterChanged = (filterValue) => {
     this.selectedFilter = filterValue;
   };
+
+  @Input()
+  receivedSearchValue: string = ''
 }

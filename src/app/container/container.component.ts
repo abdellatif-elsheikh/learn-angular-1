@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'container',
@@ -27,23 +27,24 @@ export class ContainerComponent {
     }
   };
 
-  addToCart = 0
+  // addToCart = 0
 
-  incrementPurchases = () => {
-    if (this.addToCart < this.phoneInfo.inStock) {
-      this.addToCart++
-    }
+  // incrementPurchases = () => {
+  //   if (this.addToCart < this.phoneInfo.inStock) {
+  //     this.addToCart++
+  //   }
+  // }
+
+  // decrementPurchases = () => {
+  //   if(this.addToCart > 0) {
+  //     this.addToCart--
+  //   }
+  // }
+  @Input()
+  searchValue:string = ''
+
+  changeSearchValue = (val) => {
+    this.searchValue = val
   }
 
-  decrementPurchases = () => {
-    if(this.addToCart > 0) {
-      this.addToCart--
-    }
-  }
-
-  // changeName = (newName:any) => {
-  //   this.name = newName.target.value;
-  //   console.log(newName);
-    
-  // };
 }

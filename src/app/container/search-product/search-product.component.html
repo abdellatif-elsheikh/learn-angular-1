@@ -1,5 +1,9 @@
 <div class="ekart-search-product">
-  <input type="text" class="ekart-search-product__input" [(ngModel)]="searchResult">
+  <input 
+  type="text"
+  class="ekart-search-product__input" 
+  [(ngModel)]="searchResult"
+  (keyup)="onSearch()">
   <button class="btn btn-search">Search</button>
 </div>
 <div class="ekart-search-result-for">
