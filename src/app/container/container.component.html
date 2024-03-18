@@ -1,5 +1,8 @@
 <div class="container">
-  <search-product
-  (searchValue)="changeSearchValue($event)"></search-product>
-  <product-list [receivedSearchValue]="searchValue"></product-list>
+  <search-product (searchValue)="changeSearchValue($event)"></search-product>
+  <product-list [receivedSearchValue]="searchValue" #productListComponent>
+  </product-list>
+
+  <product-details *ngIf="productListComponent.selectedProduct" [productListComponent]="productListComponentRef"></product-details>
+
 </div>

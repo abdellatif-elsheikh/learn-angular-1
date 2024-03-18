@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component, ElementRef, EventEmitter, Output, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'search-product',
@@ -11,9 +11,12 @@ export class SearchProductComponent {
   @Output()
   searchValue: EventEmitter<string> = new EventEmitter<string>()
 
-  onSubmitSearch = (searchValue: HTMLInputElement) => {
+  @ViewChild('searchInput')
+  searchInputElement: ElementRef
 
-    this.searchResult = searchValue.value
+  onSubmitSearch = () => {
+
+    this.searchResult = this.searchInputElement.nativeElement.value
     this.searchValue.emit(this.searchResult)
     
   }

@@ -1,4 +1,5 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, ViewChild } from '@angular/core';
+import { ProductListComponent } from './product-list/product-list.component';
 
 @Component({
   selector: 'container',
@@ -46,5 +47,10 @@ export class ContainerComponent {
   changeSearchValue = (val) => {
     this.searchValue = val
   }
+
+  @ViewChild(ProductListComponent)
+  productListComponentRef: ProductListComponent
+  
+  
 
 }
