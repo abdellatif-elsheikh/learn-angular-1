@@ -1,23 +1,18 @@
 <app-filter [all]="totalProducts" [inStock]="totalProductsInStock" [outStock]="totalProductsOutStock"
   (selectedFilterChanged)="filterChanged($event)"></app-filter>
-<div class="container">
+<ng-container class="container">
   <div class="row justify-content-center">
-    <div 
-    class="m-3 p-0 w-auto" 
-    *ngFor="let prod of products"
-    (click)="selectedProduct = prod">
-      <div 
-      *ngIf="(
+    <div class="m-3 p-0 w-auto" *ngFor="let prod of products" (click)="selectedProduct = prod">
+      <div *ngIf="(
       (receivedSearchValue === '') 
       || (prod.name.toLowerCase().includes(receivedSearchValue.toLowerCase()))
       || (prod.category.toLowerCase().includes(receivedSearchValue.toLowerCase()))
       )
       ">
-        <app-product 
-        [product]="prod"
-        *ngIf="(selectedFilter === 'all' || prod.is_in_inventory.toString() === selectedFilter)">
+        <app-product [product]="prod"
+          *ngIf="(selectedFilter === 'all' || prod.is_in_inventory.toString() === selectedFilter)">
         </app-product>
       </div>
     </div>
   </div>
-</div>
+</ng-container>

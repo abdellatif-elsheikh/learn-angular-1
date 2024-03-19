@@ -5,4 +5,34 @@
 
   <product-details *ngIf="productListComponent.selectedProduct" [productListComponent]="productListComponentRef"></product-details>
 
+  <div class="ekart-featured-product">
+    <div class="ekart-featured-product-heading">
+      <h2>Latest Arrival in Popular Brands</h2>
+    </div>
+
+    <div class="ekart-featured-product-items-container">
+
+      <featured-brands>
+        <ng-container id="title">Nike</ng-container>
+        <ng-container id="description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi dolore enim quam veniam maiores!
+        </ng-container>
+      </featured-brands>
+      
+      <featured-brands>
+        <ng-container id="title">Adidas</ng-container>
+        <ng-container id="description">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam consequuntur eum quia, adipisci ab, animi doloribus illum nam ea id cupiditate!
+        </ng-container>
+      </featured-brands>
+      
+      <featured-brands>
+        <ng-container id="title">Rebook</ng-container>
+        <ng-container id="description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae nesciunt alias nihil aut perferendis dolorum enim, dolorem nemo.
+        </ng-container>
+      </featured-brands>
+
+  </div>
+
 </div>
