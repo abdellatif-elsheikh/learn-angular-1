@@ -1,5 +1,5 @@
 <div class="container">
-  <search-product (searchValue)="changeSearchValue($event)"></search-product>
+  <div (searchValue)="changeSearchValue($event)"></div>search-product>
   <product-list [receivedSearchValue]="searchValue" #productListComponent>
   </product-list>
 
